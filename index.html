@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Calculator Project</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/calculator_style.css">
+        <script src="assets/js/calculator.js"></script>
+        <style>
+            h1{
+            
+                color:red;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body style="background-color:orange;">
+        <h1>Simple Calculator</h1>
+        <div class="box">
+            <div class="display">
+                <input type="text" readonly size="18" id="txtScreen" value="0">
+
+            </div>
+            
+            <div class="keys">
+                <input type="button" value="7" class="button black" onclick="setScreen('7')">
+                <input type="button" value="8" class="button black" onclick="setScreen('8')">
+                <input type="button" value="9" class="button black" onclick="setScreen('9')">
+                <input type="button" value="+" class="button operations" onclick="setOperator('+')">
+                    <br>
+                <input type="button" value="4" class="button black" onclick="setScreen('4')">
+                <input type="button" value="5" class="button black" onclick="setScreen('5')">
+                <input type="button" value="6" class="button black" onclick="setScreen('6')">
+                <input type="button" value="-" class="button operations" onclick="setOperator('-')">
+                   <br>
+                <input type="button" value="1" class="button black" onclick="setScreen('1')">
+                <input type="button" value="2" class="button black" onclick="setScreen('2')">
+                <input type="button" value="3" class="button black" onclick="setScreen('3')">
+                <input type="button" value="*" class="button operations" onclick="setOperator('*')">
+                   <br>
+                <input type="button" value="c" class="button pink" onclick="reset()">
+                <input type="button" value="0" class="button black" onclick="setScreen('0')">
+                <input type="button" value="=" class="button pink" onclick="getAnswer()"> 
+                <input type="button" value="/" class="button operations" onclick="setOperator('/')">  
+            </div>
+            <br>
+            <br>
+            <h5 style="text-align: center;">By Thilank Sanjaya</h5>
+
+        </div>
+
+    </body>
+</html>
